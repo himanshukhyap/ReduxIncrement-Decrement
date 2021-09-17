@@ -5,6 +5,7 @@ import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
 import { Decriment, increment } from "./Action/Action";
 import Increment from "./Hooks/Increment/Increment";
+import UsedReducerApp from "./UsedReducer/UsedReducerApp";
 
 function App() {
   const mystate = useSelector((state) => state.changethenumbe);
@@ -33,6 +34,7 @@ function App() {
       </button>
     </div>
     <Increment/>
+    <UsedReducerApp/>
     </>
   );
 }
